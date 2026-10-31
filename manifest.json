@@ -1,0 +1,10 @@
+{
+  "name": "Kitap Takip Sistemim",
+  "short_name": "Kitaplarım",
+  "description": "Kişisel kitap okuma ve takip uygulaması",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#6c63ff",
+  "orientation": "portrait"
+}
