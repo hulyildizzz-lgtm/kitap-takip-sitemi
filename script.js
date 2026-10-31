@@ -91,6 +91,7 @@ function kitapEkle() {
         ad: kitapAdi,
         yazar: yazar,
         okundu: false
+        favori:false
     });
 
     kitaplariKaydet();
