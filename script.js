@@ -1,3 +1,9 @@
+const SUPABASE_URL = "sb_publishable_ttWgz3dYPSUSexFiZ-XOOg_CNQiOn_q";
+const SUPABASE_KEY = "sb_publishable_SzOZGskzICDG_E4cElL-Bg_XgdoIr0Q";
+const db = window.supabase.createClient(
+    SUPABASE_URL,
+    SUPABASE_KEY
+);
 let kitaplar = JSON.parse(localStorage.getItem("kitaplar")) || [];
 
 function kitaplariKaydet() {
