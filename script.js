@@ -106,3 +106,27 @@ function istatistikGuncelle() {
 }
 
 kitaplariGoster();
+// GOOGLE İLE GİRİŞ
+async function googleIleGirisYap() {
+    const { error } = await db.auth.signInWithOAuth({
+        provider: "google",
+        options: {
+            redirectTo: window.location.origin + window.location.pathname
+        }
+    });
+
+    if (error) {
+        alert("Giriş hatası: " + error.message);
+    }
+}
+
+// HESAPTAN ÇIKIŞ
+async function cikisYap() {
+    const { error } = await db.auth.signOut();
+
+    if (error) {
+        alert("Çıkış hatası: " + error.message);
+    } else {
+        alert("Hesaptan çıkış yapıldı.");
+    }
+}
